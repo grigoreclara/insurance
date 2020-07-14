@@ -7,7 +7,7 @@ import numpy as np
 app = Flask(__name__)
 
 model = load_model('deployment_28042020')
-cols = ['vasrta', 'sex', 'imc', 'copii', 'fumator', 'regiune']
+cols = ['age', 'sex', 'bmi', 'children', 'smoker', 'region']
 
 @app.route('/')
 def home():
